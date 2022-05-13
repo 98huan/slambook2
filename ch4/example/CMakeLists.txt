@@ -1,6 +1,6 @@
-option(USE_UBUNTU_20 "Set to ON if you are using Ubuntu 20.04" OFF)
+option(USE_UBUNTU_20 "Set to ON if you are using Ubuntu 20.04" ON)
 find_package(Pangolin REQUIRED)
-if(USE_UBUNTU_20)
+if(ON)
     message("You are using Ubuntu 20.04, fmt::fmt will be linked")
     find_package(fmt REQUIRED)
     set(FMT_LIBRARIES fmt::fmt)

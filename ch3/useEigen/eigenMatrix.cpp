@@ -49,21 +49,22 @@ int main(int argc, char **argv) {
   }
 
   // 矩阵和向量相乘（实际上仍是矩阵和矩阵）
-  v_3d << 3, 2, 1;
-  vd_3d << 4, 5, 6;
+  v_3d << 3, 2, 1;       //列向量[3, 2, 1]T
+  vd_3d << 4, 5, 6;      //列向量[4, 5, 6]T
+
 
   // 但是在Eigen里你不能混合两种不同类型的矩阵，像这样是错的
   // Matrix<double, 2, 1> result_wrong_type = matrix_23 * v_3d;
   // 应该显式转换
   Matrix<double, 2, 1> result = matrix_23.cast<double>() * v_3d;
-  cout << "[1,2,3;4,5,6]*[3,2,1]=" << result.transpose() << endl;
+  cout << "[1,2,3;4,5,6]*[3,2,1]=" << result.transpose() << endl;     //transpose()是转置
 
   Matrix<float, 2, 1> result2 = matrix_23 * vd_3d;
   cout << "[1,2,3;4,5,6]*[4,5,6]: " << result2.transpose() << endl;
 
   // 同样你不能搞错矩阵的维度
   // 试着取消下面的注释，看看Eigen会报什么错
-  // Eigen::Matrix<double, 2, 3> result_wrong_dimension = matrix_23.cast<double>() * v_3d;
+//   Eigen::Matrix<double, 2, 3> result_wrong_dimension = matrix_23.cast<double>() * v_3d;
 
   // 一些矩阵运算
   // 四则运算就不演示了，直接用+-*/即可。

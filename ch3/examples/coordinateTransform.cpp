@@ -15,8 +15,17 @@ int main(int argc, char** argv) {
   Vector3d p1(0.5, 0, 0.2);
 
   Isometry3d T1w(q1), T2w(q2);
-  T1w.pretranslate(t1);
+  cout << "T1w =\n"
+       << T1w.matrix() << endl
+       << "T2w =\n"
+       << T2w.matrix() << endl;
+
+  T1w.pretranslate(t1);   // 把平移向量设成(t1)
   T2w.pretranslate(t2);
+  cout << "T1w =\n"
+       << T1w.matrix() << endl
+       << "T2w =\n"
+       << T2w.matrix() << endl;
 
   Vector3d p2 = T2w * T1w.inverse() * p1;
   cout << endl << p2.transpose() << endl;
