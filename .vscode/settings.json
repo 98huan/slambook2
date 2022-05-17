@@ -2,6 +2,11 @@
     "files.associations": {
         "ctime": "cpp",
         "core": "cpp",
-        "dense": "cpp"
+        "dense": "cpp",
+        "string": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "geometry": "cpp",
+        "chrono": "cpp"
     }
 }

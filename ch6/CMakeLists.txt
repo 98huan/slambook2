@@ -19,7 +19,8 @@ find_package(G2O REQUIRED)
 include_directories(${G2O_INCLUDE_DIRS})
 
 # Eigen
-include_directories("/usr/include/eigen3")
+include_directories("/usr/local/include/eigen3")
+set(EIGEN_INCLUDE_DIRS "/usr/local/include/eigen3")
 
 add_executable(gaussNewton gaussNewton.cpp)
 target_link_libraries(gaussNewton ${OpenCV_LIBS})
