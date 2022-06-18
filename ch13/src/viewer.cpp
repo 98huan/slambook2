@@ -1,9 +1,9 @@
 //
 // Created by gaoxiang on 19-5-4.
 //
-#include "myslam/viewer.h"
-#include "myslam/feature.h"
-#include "myslam/frame.h"
+#include "/home/zh/slambook2/ch13/include/myslam/viewer.h"
+#include "/home/zh/slambook2/ch13/include/myslam/feature.h"
+#include "/home/zh/slambook2/ch13/include/myslam/frame.h"
 
 #include <pangolin/pangolin.h>
 #include <opencv2/opencv.hpp>

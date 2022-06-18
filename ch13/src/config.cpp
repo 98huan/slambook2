@@ -1,4 +1,4 @@
-#include "myslam/config.h"
+#include "/home/zh/slambook2/ch13/include/myslam/config.h"
 
 namespace myslam {
 bool Config::SetParameterFile(const std::string &filename) {

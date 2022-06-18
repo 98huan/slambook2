@@ -2,12 +2,12 @@
 // Created by gaoxiang on 19-5-2.
 //
 
-#include "myslam/backend.h"
-#include "myslam/algorithm.h"
-#include "myslam/feature.h"
-#include "myslam/g2o_types.h"
-#include "myslam/map.h"
-#include "myslam/mappoint.h"
+#include "/home/zh/slambook2/ch13/include/myslam/backend.h"
+#include "/home/zh/slambook2/ch13/include/myslam/algorithm.h"
+#include "/home/zh/slambook2/ch13/include/myslam/feature.h"
+#include "/home/zh/slambook2/ch13/include/myslam/g2o_types.h"
+#include "/home/zh/slambook2/ch13/include/myslam/map.h"
+#include "/home/zh/slambook2/ch13/include/myslam/mappoint.h"
 
 namespace myslam {
 

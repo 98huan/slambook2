@@ -17,7 +17,7 @@
  *
  */
 
-#include "myslam/frame.h"
+#include "/home/zh/slambook2/ch13/include/myslam/frame.h"
 
 namespace myslam {
 

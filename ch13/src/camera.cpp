@@ -1,4 +1,4 @@
-#include "myslam/camera.h"
+#include "/home/zh/slambook2/ch13/include/myslam/camera.h"
 
 namespace myslam {
 

@@ -17,8 +17,8 @@
  *
  */
 
-#include "myslam/mappoint.h"
-#include "myslam/feature.h"
+#include "/home/zh/slambook2/ch13/include/myslam/mappoint.h"
+#include "/home/zh/slambook2/ch13/include/myslam/feature.h"
 
 namespace myslam {
 

@@ -7,6 +7,8 @@
         "cmath": "cpp",
         "complex": "cpp",
         "geometry": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "ostream": "cpp",
+        "mutex": "cpp"
     }
 }
